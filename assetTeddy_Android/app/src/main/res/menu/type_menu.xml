@@ -1,0 +1,47 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.myapplication.MainActivity">
+    <item
+        android:id="@+id/Monitor"
+        android:orderInCategory="100"
+        android:title="Monitor"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/CPU"
+        android:orderInCategory="100"
+        android:title="CPU"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/Phone"
+        android:orderInCategory="100"
+        android:title="Phone"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/Modem"
+        android:orderInCategory="100"
+        android:title="Modem"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/Keyboard"
+        android:orderInCategory="100"
+        android:title="Keyboard"
+        app:showAsAction="never" />
+    <item
+    android:id="@+id/printer"
+    android:orderInCategory="100"
+    android:title="printer"
+    app:showAsAction="never" />
+    <item
+        android:id="@+id/headset"
+        android:orderInCategory="100"
+        android:title="headset"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/TV"
+        android:orderInCategory="100"
+        android:title="TV"
+        app:showAsAction="never" />
+</menu>
+
+

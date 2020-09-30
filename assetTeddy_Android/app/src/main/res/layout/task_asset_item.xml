@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/task_image"
+        />
+    <LinearLayout
+        android:id="@+id/task_item_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/asset_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#393d46"
+            android:textSize="20dp"
+            android:text="title text"
+            />
+
+        <TextView
+            android:id="@+id/asset_update_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#b9c2c7"
+            android:textSize="16dp"
+            android:text="title text"
+            />
+
+        <TextView
+            android:id="@+id/asset_update_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#b9c2c7"
+            android:textSize="16dp"
+            android:text="title text"
+            />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single" >
+        <item
+            android:id="@+id/Homepage"
+            android:title="Home"
+            android:visible="false"
+            />
+        <item
+            android:id="@+id/Add_New_Asset"
+            android:title="Add New Asset"
+            />
+        <item
+            android:id="@+id/Update_Asset"
+            android:title="Update Asset" />
+        <item
+            android:id="@+id/Track_Asset"
+            android:title="Track Asset" />
+        <item
+            android:id="@+id/Generate_Report"
+            android:title="Generate Report" />
+        <item
+            android:id="@+id/User_Register"
+            android:title="User_Register" />
+        <item
+            android:id="@+id/Remove_User"
+            android:title="User Profile" />
+        <item
+            android:id="@+id/Tasks"
+            android:title="Latest Activities" />
+    </group>
+
+</menu>

@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Track.TrackView">
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="#c0ccda"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:text="Asset Detail"
+            android:textColor="#f8f9fa"
+            android:textStyle="bold"
+            android:textSize="30sp" />
+    </RelativeLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical"
+        android:tag="add_new">
+        <ProgressBar
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/track_asset_progressbar"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity = "center"
+            android:max="100"
+            android:progress="0"
+            android:indeterminate="false" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:text="Serial Number"></TextView>
+                <LinearLayout
+                    android:layout_marginTop="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/serial_number_by_track"
+                        android:textColor="#000000"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:gravity="bottom"
+                        android:layout_gravity="bottom"
+                        android:textSize="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@android:color/transparent"
+                        android:textColorHint="#000000" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="1dp"
+                    android:background="#e5eaef"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:weightSum="1"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="0.0dp"
+                        android:layout_weight="0.96"
+                        android:layout_height="50dp"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="9dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="18dp"
+                            android:text="Asset Tag"></TextView>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:weightSum="1"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:textColor="#000000"
+                                android:inputType="number"
+                                android:maxLines="1"
+                                android:id="@+id/asset_tag_by_track"
+                                android:layout_weight="0.95"
+                                android:layout_gravity="bottom"
+                                android:textSize="16dp"
+                                android:layout_width="0.0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:background="@android:color/transparent"
+                                android:textColorHint="#000000" />
+                        </LinearLayout></LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="1dp"
+                    android:background="#e5eaef"
+                    />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:text="Type"></TextView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:weightSum="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/type_by_track"
+                        android:textColor="#000000"
+                        android:inputType="text"
+                        android:layout_weight="1"
+                        android:maxLines="1"
+                        android:textSize="16dp"
+                        android:layout_gravity="bottom"
+                        android:layout_width="0.0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@android:color/transparent"
+                        android:textColorHint="#000000" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="1dp"
+                    android:background="#e5eaef"
+                    />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:text="Description"></TextView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/description_by_track"
+                        android:textColor="#000000"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:textSize="16dp"
+                        android:layout_gravity="bottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@android:color/transparent"
+                        android:textColorHint="#000000" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="1dp"
+                    android:background="#e5eaef"
+                    />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:text="Location"></TextView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/location_by_track"
+                        android:textColor="#000000"
+                        android:inputType="text"
+                        android:layout_weight="0.9"
+                        android:maxLines="1"
+                        android:textSize="16dp"
+                        android:layout_gravity="bottom"
+                        android:layout_width="0.0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@android:color/transparent"
+                        android:textColorHint="#000000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#e5eaef"
+                    />
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:text="Department"></TextView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/department_by_track"
+                        android:textColor="#000000"
+                        android:inputType="text"
+                        android:layout_weight="0.9"
+                        android:maxLines="1"
+                        android:textSize="16dp"
+                        android:layout_gravity="bottom"
+                        android:layout_width="0.0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@android:color/transparent"
+                        android:textColorHint="#000000" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#e5eaef"
+                    />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:text="Status"></TextView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:weightSum="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/status_by_track"
+                        android:textColor="#000000"
+                        android:inputType="text"
+                        android:layout_weight="1"
+                        android:maxLines="1"
+                        android:textSize="16dp"
+                        android:layout_gravity="bottom"
+                        android:layout_width="0.0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@android:color/transparent"
+                        android:textColorHint="#000000" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="1dp"
+                    android:background="#e5eaef"
+                    />
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:text="User Name"></TextView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView android:textColor="#000000"
+                        android:id="@+id/username_by_track"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:textSize="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@android:color/transparent"
+                        android:textColorHint="#000000" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="1dp"
+                    android:background="#e5eaef"
+                    />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:text="Remark"></TextView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView android:textColor="#000000"
+                        android:id="@+id/remark_by_track"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:textSize="16dp"
+                        android:layout_gravity="bottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@android:color/transparent"
+                        android:textColorHint="#000000" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="1dp"
+                    android:background="#e5eaef"
+                    />
+
+                <LinearLayout
+                    android:layout_marginTop="40dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+                        <Button
+                            android:id="@+id/track_asset_back"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:background="@drawable/button_bg_rounded_corners"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:textColor="#FFFFFF"
+                            android:text="Back" />
+                    </LinearLayout>
+                </LinearLayout>>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

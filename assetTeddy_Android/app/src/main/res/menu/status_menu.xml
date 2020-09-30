@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.myapplication.MainActivity">
+    <item
+        android:id="@+id/assigned"
+        android:orderInCategory="100"
+        android:title="assigned"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/unassigned"
+        android:orderInCategory="100"
+        android:title="unassigned"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/faulty"
+        android:orderInCategory="100"
+        android:title="faulty"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/dispose"
+        android:orderInCategory="100"
+        android:title="dispose"
+        app:showAsAction="never" />
+</menu>

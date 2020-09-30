@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    android:label="@string/update_assets"
+    app:startDestination="@id/Homepage">
+    <fragment
+        android:id="@+id/Homepage"
+        android:name="com.example.myapplication.ui.Home.Homepage_Fragment"
+        android:label="HOME" />
+    <fragment
+        android:id="@+id/Tasks"
+        android:name="com.example.myapplication.ui.Tasks.Tasks_Fragment"
+        android:label="Asset History" />
+    <fragment
+        android:id="@+id/Remove_User"
+        android:name="com.example.myapplication.ui.Remove_User.Remove_User_Fragment"
+        android:label="User Profile" />
+    <fragment
+        android:id="@+id/User_Register"
+        android:name="com.example.myapplication.ui.User_Register.User_Register_Fragment"
+        android:label="ADD NEW USER" />
+    <fragment
+        android:id="@+id/Generate_Report"
+        android:name="com.example.myapplication.ui.Generate_Report.Generate_Report_Fragment"
+        android:label="GENERATE REPORT" />
+    <fragment
+        android:id="@+id/Add_New_Asset"
+        android:name="com.example.myapplication.ui.Add_New_Asset.HomeFragment"
+        android:label="ADD NEW ASSET"
+        tools:layout="@layout/fragment_add_new" />
+
+    <fragment
+        android:id="@+id/Update_Asset"
+        android:name="com.example.myapplication.ui.Update_Asset.GalleryFragment"
+        android:label="UPDATE ASSET"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/Track_Asset"
+        android:name="com.example.myapplication.ui.Track.SlideshowFragment"
+        android:label="TRACK ASSET"
+        tools:layout="@layout/fragment_track_asset" />
+    <fragment
+        android:id="@+id/update_asset"
+        android:name="com.example.myapplication.ui.Update_Asset.update"
+        android:label="UPDATE ASSET"
+        tools:layout="@layout/fragment_update2" />
+</navigation>
